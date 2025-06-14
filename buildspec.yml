@@ -6,9 +6,9 @@ phases:
       - echo Installing dependencies...
       - yum install -y jq maven
       - echo Logging in to Amazon ECR...
-      - ACCOUNT_ID=619071307284
+      - ACCOUNT_ID=522814735019
       - REGION=us-east-1
-      - REPO_NAME=spring-demo-ecr
+      - REPO_NAME=pavanspring
       - IMAGE_TAG=latest
       - aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin ${ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com
 
